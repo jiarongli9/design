@@ -60,13 +60,29 @@ a:hover::before {
 
 /* containers */
 .text-container{
-	margin:100px 20px 60px 20px;
+	margin:80px 20px 50px 20px;
 	width: 80%;
 }
 
 .img-container{
 	margin:50px 20px;
 }
+
+.video-container {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	margin:10px 20px;
+}
+
+.video-container iframe {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; }
 
 /* fonts */
 h1{
@@ -162,6 +178,7 @@ td{
 	clear: both;
 
 }
+
 
 /* footer */
 footer{
