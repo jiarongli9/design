@@ -146,6 +146,7 @@ h5{
   } 
 }
 
+
 /* fade-in animation */
 .fade-in{
 	opacity: 0;
@@ -157,6 +158,7 @@ h5{
 	opacity:1;
 	transform: translateX(0px);
 }
+
 
 /* table */
 table {
@@ -214,6 +216,7 @@ footer p a::before {
 	}
 	h1{
 		font-size: 3rem;
+		line-height:3.5rem;
 	}
 	h2{
 		font-size: 1.5rem;
@@ -237,3 +240,59 @@ footer p a::before {
 	}
 	
 }
+
+
+/* */
+header {
+	margin: 50px 20px;
+	height: 2.5em;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  ul,
+  li {
+	height: 13.5em;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+  }
+  
+  li {
+	list-style-type: none;
+	margin: 0;
+	height: 1em !important;
+	padding: 0px 0px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	width: 100%;
+  }
+  
+  .t {
+	animation-name: titleflip;
+	animation: titleflip 5s ease-in-out infinite;
+	  }
+  
+  @-webkit-keyframes titleflip {
+	0%, 17% {
+	transform: translate(0px, -12em);
+	}
+	17%, 34% {
+   transform: translate(0px, -9.5em);
+	}
+	34%, 51% {
+	transform: translate(0px, -7em);
+	}
+	51%, 68% {
+	transform: translate(0px, -4.5em);
+	}
+	68%, 85% {
+	transform: translate(0px, -2em);
+	}
+	85%, 100% {
+	transform: translate(0px, 0.5em);
+	}
+	100%, 0% {
+	transform: translate(0px, -13em);
+	}
+  }

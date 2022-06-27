@@ -1,5 +1,5 @@
 'use strict'
-
+//fade-in
 const faders=document.querySelectorAll('.fade-in');
 const appearOptions={
     root:null,
