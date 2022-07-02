@@ -73,7 +73,7 @@ a:hover::before {
 	padding-bottom: 56.25%; 
 	padding-top: 30px; 
 	height: 0; 
-	overflow: hidden; 
+	overflow: hidden;
 	margin:10px 20px;
 }
 
@@ -82,7 +82,8 @@ a:hover::before {
 	top: 0; 
 	left: 0; 
 	width: 100%; 
-	height: 100%; }
+	height: 100%; 
+}
 
 /* fonts */
 h1{
@@ -136,7 +137,7 @@ h5{
 	overflow: hidden;
 	width: 100%;
 	animation: animtext 2s steps(80, end); 
-   transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+	transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 @keyframes animtext { 
@@ -238,6 +239,10 @@ footer p a::before {
 		font-size:18px;
 		line-height: 24px;
 	}
+	.video-container iframe {
+		width: 100%; 
+		height: 100%; 
+	}
 	
 }
 
@@ -270,7 +275,7 @@ header {
   
   .t {
 	animation-name: titleflip;
-	animation: titleflip 5s ease-in-out infinite;
+	animation: titleflip 6s ease-in-out infinite;
 	  }
   
   @-webkit-keyframes titleflip {
