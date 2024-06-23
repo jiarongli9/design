@@ -98,11 +98,6 @@ input[type=password] {
 	margin:80px 20px 100px 20px;
 	width: 80%;
 }
-.text-container-half{
-	margin:80px 20px 100px 20px;
-	width: 50%;
-}
-
 .img-container{
 	margin:80px 20px 100px 20px;
 }
@@ -136,22 +131,11 @@ h3{
 	float: left;
 }
 
-.col-2{
-	width:50%;
-	padding-right:50px;
-	float: left;
-}
-
 .col-3 {
 	width: 75%;
 	float: left;
 
 }
-.col-0{
-	width:70%;
-	float: left;
-}
-
 
 /* text animation */
 .text-animation {
@@ -180,27 +164,6 @@ h3{
 .fade-in.appear{
 	opacity:1;
 	transform: translateX(0px);
-}
-
-
-/* table */
-table {
-	border-collapse:collapse;
-	float:right;
-	clear: both;
-}
-th, td{
-	padding-right:30px;
-	text-align:left;
-	vertical-align: top;
-}
-td{
-	color:#999;
-}
-
-.clearfix{
-	clear: both;
-
 }
 
 
@@ -237,9 +200,6 @@ footer p a.text-link::before {
 		font-size:1rem;
 		line-height: 1.3rem;
 	}
-	td{
-		line-height:24px;
-	}
 }
 /* small screens */
 @media screen and (max-width: 1112px){
@@ -247,27 +207,13 @@ footer p a.text-link::before {
 		width: 21%;
 		float: left;
 	}
-	.col-2{
-		width:100%;
-	}
 	.col-3{
 		width: 70%;
 		float: left;
 	}
-	
-	.col-0{
-		width:100%;
-	}
-	table{
-		margin-top:20px;
-	}
 	.text-container{
 		width: 90%;
 		margin:80px 20px;
-	}
-	.text-container-half{
-		width: 65%;
-		margin:40px 20px;
 	}
 	.row:after {
 		content: "";
@@ -283,25 +229,33 @@ footer p a.text-link::before {
 		line-height: 38px;
 	}
 	h1{
-		font-size: 2.9rem;
-		line-height:3.2rem;
+		font-size: 2.6rem;
+		line-height:3rem;
 	}
 	h2{
 		font-size: 1.6rem;
 		line-height: 1.9rem;
 	}
 	h3{
-		font-size: 1.3rem;
-		line-height: 1.5rem;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
 	}
 	.col-1{
 		width: 100%;
 	}
-	.col-2{
-		width:100%;
-	}
 	.col-3{
 		width: 100%;
+	}
+	.text-container{
+		width: 90%;
+		margin:40px 20px;
+	}
+	
+	.img-container{
+		margin:40px 20px;
+	}
+	footer{
+		margin:80px 20px 20px 20px;
 	}
 }
 
@@ -319,19 +273,8 @@ footer p a.text-link::before {
 		line-height: 1.8rem;
 	}
 	h3{
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		line-height: 1.6rem;
-	}
-	table {
-		float:right;
-		margin-right:-10%;
-	}
-	th, td{
-		padding-right:15px;
-		
-	}
-	td{
-		line-height:20px;
 	}
 
 }
