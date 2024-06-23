@@ -35,7 +35,7 @@ body{
   }
 
 /* a - link animation */
-a {
+a.text-link {
 	position: relative;
 	color:white;
 	padding: 0.1em 0;
@@ -43,11 +43,11 @@ a {
 	border: none;
 }
 
-a:hover {
+a.text-link:hover {
   color: white;
 }
 	
-a::before {
+a.text-link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -59,8 +59,12 @@ a::before {
   transition: transform 0.3s ease-in-out;
 }
 
-a:hover::before {
+a.text-link:hover::before {
   transform: scaleX(1);
+}
+
+p a.text-link::before {
+	background-color: #FFE268;
 }
 
 button {
@@ -205,10 +209,11 @@ footer{
 	clear:both;
 }
 
-footer p a::before {
+footer p a.text-link::before {
 	background-color: #FFE268;
 	
 }
+
 /* medium screens */
 @media screen and (max-width: 1200px){
 	* {
