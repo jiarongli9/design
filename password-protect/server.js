@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-const PASSWORD = 'JL1234';
+const PASSWORD = '12345';
 
 app.post('/check-password', (req, res) => {
     const { password } = req.body;
