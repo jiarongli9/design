@@ -63,8 +63,9 @@ a.text-link:hover::before {
   transform: scaleX(1);
 }
 
-p a.text-link::before {
+div.col-3 a.text-link::before {
 	background-color: #FFE268;
+
 }
 
 button {
