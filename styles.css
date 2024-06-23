@@ -4,8 +4,8 @@
 * {
 	margin:0;
 	padding:0;
-	font-family: Arial,Helvetica,sans-serif;
-	font-weight: 100;
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
 	font-size: 24px;
 	line-height: 32px;
 	background-color: black;
@@ -19,34 +19,39 @@ body{
 	margin:auto;
 }
 
+
 /* nav */
 #nav {
 	font-size: 18px;
 	margin:30px 20px;
 }
+  li {
+	display: inline;
+	height:200px;
+  }
+  
+  li a {
+	text-transform: capitalize;
+  }
 
-#nav a{
-	margin-right:20px;
-	
-}
-
-/* link animation */
+/* a - link animation */
 a {
 	position: relative;
 	color:white;
 	padding: 0.1em 0;
 	text-decoration: none;
+	border: none;
 }
 
 a:hover {
   color: white;
 }
-
+	
 a::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 2px;
   bottom: -5px;
   left: 0;
   background-color: white;
@@ -58,37 +63,50 @@ a:hover::before {
   transform: scaleX(1);
 }
 
+button {
+	padding: 8px 40px; 
+	margin: 0px 0px 0px 20px;
+	border-radius: 100px;
+	border-color:#ffff;
+	
+
+}
+
+button:hover {
+	color:#000000;
+	background-color: #FFE268;
+	border-color:#FFE268;
+}
+
+input[type=password] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: #ffffff;
+	color: #000000;
+  }
+
 /* containers */
 .text-container{
-	margin:80px 20px 50px 20px;
+	margin:80px 20px 100px 20px;
 	width: 80%;
+}
+.text-container-half{
+	margin:80px 20px 100px 20px;
+	width: 50%;
 }
 
 .img-container{
-	margin:50px 20px;
+	margin:80px 20px 100px 20px;
 }
 
-.video-container {
-	position: relative; 
-	padding-bottom: 56.25%; 
-	padding-top: 30px; 
-	height: 0; 
-	overflow: hidden;
-	margin:10px 20px;
-}
-
-.video-container iframe {
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-}
 
 /* fonts */
 h1{
-	font-size: 3.8rem;
-	line-height: 4rem;
+	font-size: 3.2rem;
+	line-height: 3.8rem;
 }
 h2{
 	font-size: 2rem;
@@ -99,18 +117,7 @@ h3{
 	line-height: 1.8rem;
 }
 
-h4{
-	font-size: .9rem;
-	line-height: 1.2rem;
-	padding-bottom: 10px;
-	
-}
 
-h5{
-	font-size: 1rem;
-	line-height: 1.3rem;
-	padding-bottom: 10px;
-}
 /* columns */
 .row:after {
 	content: "";
@@ -118,11 +125,22 @@ h5{
 	clear: both;
 	margin-bottom:50px;
   }
+.col-1{
+	width: 24%;
+	padding-right:20px;
+	float: left;
+}
 
 .col-2{
 	width:50%;
 	padding-right:50px;
 	float: left;
+}
+
+.col-3 {
+	width: 75%;
+	float: left;
+
 }
 .col-0{
 	width:70%;
@@ -183,7 +201,7 @@ td{
 
 /* footer */
 footer{
-	margin:100px 20px 20px 20px;
+	margin:150px 20px 20px 20px;
 	clear:both;
 }
 
@@ -209,14 +227,6 @@ footer p a::before {
 		font-size: 1.3rem;
 		line-height: 1.5rem;
 	}
-	h4{
-		font-size: .8rem;
-		line-height: 1.1rem;
-	}
-	h5{
-		font-size: .9rem;
-		line-height: 1.2rem;
-	}
 	p{
 		font-size:1rem;
 		line-height: 1.3rem;
@@ -227,9 +237,18 @@ footer p a::before {
 }
 /* small screens */
 @media screen and (max-width: 1112px){
+	.col-1{
+		width: 21%;
+		float: left;
+	}
 	.col-2{
 		width:100%;
 	}
+	.col-3{
+		width: 70%;
+		float: left;
+	}
+	
 	.col-0{
 		width:100%;
 	}
@@ -238,7 +257,11 @@ footer p a::before {
 	}
 	.text-container{
 		width: 90%;
-		margin:30px 20px;
+		margin:80px 20px;
+	}
+	.text-container-half{
+		width: 65%;
+		margin:40px 20px;
 	}
 	.row:after {
 		content: "";
@@ -254,20 +277,25 @@ footer p a::before {
 		line-height: 38px;
 	}
 	h1{
-		font-size: 3rem;
-		line-height:3.5rem;
+		font-size: 2.9rem;
+		line-height:3.2rem;
 	}
 	h2{
-		font-size: 1.5rem;
-		line-height: 1.8rem;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
 	}
 	h3{
-		font-size: 1rem;
-		line-height: 1.3rem;
+		font-size: 1.3rem;
+		line-height: 1.5rem;
 	}
-	.video-container iframe {
-		width: 100%; 
-		height: 100%; 
+	.col-1{
+		width: 100%;
+	}
+	.col-2{
+		width:100%;
+	}
+	.col-3{
+		width: 100%;
 	}
 }
 
@@ -276,6 +304,18 @@ footer p a::before {
 		font-size:18px;
 		line-height: 24px;
 	}
+	h1{
+		font-size: 2.5rem;
+		line-height:3rem;
+	}
+	h2{
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+	h3{
+		font-size: 1.3rem;
+		line-height: 1.6rem;
+	}
 	table {
 		float:right;
 		margin-right:-10%;
@@ -283,10 +323,6 @@ footer p a::before {
 	th, td{
 		padding-right:15px;
 		
-	}
-	.text-container{
-		width: 90%;
-		margin:20px 20px;
 	}
 	td{
 		line-height:20px;
@@ -348,3 +384,12 @@ header {
 	transform: translate(0px, -13em);
 	}
   }
+
+  /*Aside */
+  aside {
+	margin:20px 20px 20px 20px;
+	position:fixed;
+    width:25%;
+    height:auto;
+
+}
